@@ -29,8 +29,9 @@ Test your createMenuItems function by doing the following:
   
   For example: createMenuItem("pizza",5,"lunch") would return this as the object: {name:"Pizza",price:5,category:"lunch"}
 */
-createMenuItem("taco", 8, "lunch");
-
+// console.log(createMenuItem("taco", 8, "lunch"));
+// console.log(createMenuItem("water", 0.5, "beverage"));
+// console.log(createMenuItem("burrito", 10, "lunch"));
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
@@ -50,7 +51,20 @@ export const burger = {
   name: "Burger", 
   price: 18, 
   category: "Lunch", 
-  /*Your code here*/
+  discount: function(key){
+    if(key==='teacher'){
+      return this.teacher*this.price;
+    }
+    else if(key==='student'){
+      return this.student*this.price;
+    }
+    else if(key==='public'){
+      return this.public*this.price;
+    }
+  },
+  teacher: .75,
+  students: .75,
+  public: .9,
 }
 
 
@@ -71,7 +85,7 @@ const reviews = [
 Using the reviews array above:
   1. log only Julius' feedback to the console - no function needed 
 */
-
+console.log(reviews)
 
 
 
