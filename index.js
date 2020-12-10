@@ -15,8 +15,8 @@ The function should:
   Example createMenuItem('tacos', 8, 'Lunch') should return {name: 'tacos', price: 8, category: 'Lunch'}
 */
 
-function createMenuItem(arrayName, arrayPrice, arrayCategory){
-    let newMenuItem = {name: arrayName, price: arrayPrice, category: arrayCategory}
+function createMenuItem(name, price, category){
+    let newMenuItem = {name, price, category};
     return newMenuItem;
 }
 
